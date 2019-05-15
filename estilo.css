@@ -7,6 +7,13 @@
 	line-height: 1.5;
 }
 
+body { /* image de fundo */
+    background-image: url(Imagem1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /* inicio do menu */
 
 .nav { /* class que pega a imagem e a barra do menu */
@@ -91,17 +98,13 @@
 
 /* inicio da parte do conteudo */
 
-body { /* image de fundo */
-    background-image: url(Imagem1.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .content {
     margin-top: 100px;
 }
 
+.post {
+    margin: 10px 80px;
+}
 .main_title {
     text-align: center;
     font-family: Caslon, serif;
@@ -113,16 +116,16 @@ body { /* image de fundo */
     display: grid;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     padding: 0 0.5px;
-    margin: 0 100px;
+    margin: 0 80px;
 }
 
 .limite_img {
     height: 220px;
-    width: 415px;
+    width: 290px;
 }
 
 .img_atalho {
-    margin: 10px 105px;
+    margin: 10px 45px;
     border: 2px solid #A9A9A9;
     border-radius: 10px;
     align-items: center;
@@ -136,10 +139,8 @@ body { /* image de fundo */
     display: grid;
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     border: double gray;
-    border-radius: 5px;
-    margin: 0 50px 20px 50px;
-    padding:2px 10px;
-    width:320px;
+    border-radius: 5px;    
+    width: 290px;
 }
 /* final dos atalhos */
 
@@ -183,10 +184,10 @@ h3 {
 /*PAGINA PROJETOS*/
 
 .menu_lateral{
-    border: 2px solid red;
-    width: 100px;
+    border-right: 1px solid red;
+    width: 200px;
     float: left;
-    margin: 10px;
+    margin: 15px;
     
     position: fixed;
     bottom: 350px;
@@ -220,23 +221,21 @@ h3 {
 
 .suaclasseaqui{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 100px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: crimson;
+    bottom: 15px;
+    right: 20px;
+    text-decoration: none;
     color: white;
-    box-shadow: 2px 2px 5px black;
-    text-align: center;
-    padding: 0.5em;
+    font-size: 12px;
+    padding: 10px;
+    display: inline;
 }
+
 
 /* termino do botão */
 
 /* PAGINA COMO SURGIU */
 
-.post {
+.post2 {
     margin: 1% 12%;
 }
 
@@ -245,8 +244,22 @@ h3 {
     margin-right: 10px; 
 }
 
+.yellow {
+    float: left;
+    width: 220px;
+    height: 150 px;
+    margin-left: 220px;
+    margin-right: 10px;
+    padding-top: 12px;
+}
+
 p{
     text-align: justify;
     font-size: 18px;
     font-weight: 600px;
+}
+
+n{
+    color: red;
+    font-size: 24px;
 }
