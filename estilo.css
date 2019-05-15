@@ -75,25 +75,6 @@ body { /* image de fundo */
     border-radius: 12px;
 }
 
-    /* SUBMENU */
- 
-    .menu li ul {
-        position: absolute;
-        top: 25px;
-        left: 0;
-        background-color: rgb(169,169,169, 0.5);
-        display: none;
-        width: 113%;
-        list-style: none;
-        margin-top: 15px;
-        padding: 10px;
-        border: 2px solid rgb(169,169,169);
-        border-top: none;
-        border-radius: 0 0 12px 12px;
-    }
-
-    .menu li:hover ul, .menu li.over ul { display:block; }
-
 /* fim do menu */
 
 /* inicio da parte do conteudo */
