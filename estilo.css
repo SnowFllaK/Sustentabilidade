@@ -164,19 +164,32 @@ h3 {
 
 /*PAGINA PROJETOS*/
 
-.menu_lateral{
-    border-right: 1px solid red;
-    width: 200px;
-    float: left;
-    margin: 15px;
-    
-    position: fixed;
-    bottom: 350px;
+.vertical-menu{
+    width: 150px;
 }
 
-.menu_lateral ul li{
-    list-style: none;
+.vertical-menu a{
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 25px;
+    margin: 0px 0px 0px 15px;
+    text-decoration: none;
+    float:left;
 }
+
+.vertical-menu a:hover{
+    background-color: #ccc;
+}
+
+.vertical-menu a.active{
+    background-color: #4CAF50;
+    color: white;
+    width: 180px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);  
+
+}
+
 
 .pesquisa{
     margin-left: 5px;
@@ -213,6 +226,13 @@ h3 {
 
 
 /* termino do botão */
+
+.cidades {
+    width: 180px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+/* FIM DA PAGINA DE PROJETOS */
 
 /* PAGINA COMO SURGIU */
 
