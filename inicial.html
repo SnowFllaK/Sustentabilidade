@@ -5,6 +5,19 @@
             <link rel="stylesheet" type="text/css" href="estilo.css">
 
             <title>Home</title>
+
+            <style>
+                .mySlides {
+                    display: none;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 42px;
+                    width: 775px;
+                    height: 450px;
+                    border-radius: 10px;
+                }
+            </style>
+
         </head>
         <body> <!-- -->
             <div id="wrap"> <!-- div para toda a página -->
@@ -19,14 +32,9 @@
                         <ul class="menu-list">
                             <li class="active"><a href="inicial.html">Home</a></li>
                             <li><a href="comosurgiu.html">Como Surgiu</a></li>
-                            <li><a href="projetos.html">Projetos &#9663;</a>
-                                <ul> <!-- menu dropdown -->
-                                    <li><a href="#">Santos</a></li>
-                                    <li><a href="#">Praia Grande</a></li>
-                                    <li><a href="#">Cubatão</a></li>
-                                </ul> <!-- final do dropdown -->
+                            <li><a href="projetos.html">Projetos</a>
                             </li>
-                            <li><a href="#">Contatos</a></li>
+                            <li><a href="dicas.html">Dicas</a></li>
                         </ul>
                     </div>
                 </div> <!-- fim da area do menu -->
@@ -37,63 +45,31 @@
 
                     <div class="post">
 
-                        <h1 class="main_title">TÍTULO</h1>
-                            <br>
-                        
-                        <div class="atalhos"> <!-- -->
-                            <!-- começo da primeira linha de atalhos -->
-                            <div class="limite_img">
-                                <a href="#">
-                                    <img class="img_atalho" src="#">
-                                </a>
-                            </div>
-
-                            <div class="limite_img">
-                                <a href="#">
-                                    <img class="img_atalho" src="#">
-                                </a>
-                            </div>
-
-                            <div class="limite_img">
-                                <a href="#">
-                                    <img class="img_atalho" src="#">
-                                </a>
-                            </div>
-
-                            <!-- titulo do atalho -->
-                            <a class="link-atalho" href="#"><h4>Surgimento do termo Sustentabilidade</h4></a>
+                        <div class="slides">
                             
-                            <a class="link-atalho" href="#"><h4>Título</h4></a>
-                            <a class="link-atalho" href="#"><h4>Título</h4></a>
-
-                            <!-- segunda linha de atalho -->
-                            <div class="limite_img">
-                                <a href="#">
-                                    <img class="img_atalho" src="#">
-                                </a>
-                                </div>
-    
-                                <div class="limite_img">
-                                    <a href="#">
-                                        <img class="img_atalho" src="#">
-                                    </a>
-                                </div>
-    
-                                <div class="limite_img">
-                                     <a href="#">
-                                        <img class="img_atalho" src="#">
-                                    </a>
-                                </div>
-    
-                                <!-- titulo do atalho -->
-                                <a class="link-atalho" href="#"><h4>Surgimento do termo Sustentabilidade</h4></a>
-                                
-                                <a class="link-atalho" href="#"><h4>Título</h4></a>
-                                <a class="link-atalho" href="#"><h4>Título</h4></a>
-
-
+                            <img class="mySlides" src="surg.jpg">
+                            <img class="mySlides" src="recicla-praia.jpg">
+                            <img class="mySlides" src="bike_2.jpg">
 
                         </div>
+
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";                                    
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}
+                                x[myIndex-1].style.display = "block";
+                                setTimeout(carousel, 2500); //Change image every 2.5 seconds.
+                            }
+                        
+                        </script>
 
                     </div>
 
